@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kartik  | 16.8 Yrs Developer</title>
+<style>
+body{font-family:Arial;text-align:center;background:#f0f2f5;margin:0}
+.card{background:white;margin:15px;padding:20px;border-radius:15px;box-shadow:0 2px 10px #ccc}
+h1{color:#ff6600} .btn{background:#0a66c2;color:white;padding:12px 20px;border-radius:25px;text-decoration:none;display:inline-block;margin:5px}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>🇮🇳 Kartik </h1>
+<p>NTPC Unchahar | 16.8 Years Old</p>
+<p><b>IT Student - Firoz Gandhi Polytechnic</b></p>
+<p>Mimo - 2087 XP - Rank 2th - Bronze League King</p>
+<p>Pyroid 3 Developer | Blogger</p>
+<a class="btn" href="https://kartikitstudent.blogspot.com">My Blogspot</a>
+<a class="btn" style="background:#333" href="https://github.com/kartikucr-07">GitHub</a>
+</div>
+<div class="card">
+<h3>My Journey</h3>
+<p>2 weeks ago I started this repo. Now at 16.8 years I am building my own website on Google. Learning HTML, CSS, Python.</p>
+</div>
+</body>
+</html>
