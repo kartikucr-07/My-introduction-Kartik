@@ -1,56 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kartik - 16.8 Yrs Dev</title>
-<style>
-body{
-  font-family:Arial;
-  text-align:center;
-  background:#eef2f7;
-  margin:0;
-  padding:20px;
-}
-.card{
-  background:white;
-  margin:15px auto;
-  padding:25px;
-  border-radius:20px;
-  max-width:400px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.1);
-}
-h1{
-  color:#ff6600;
-  margin-bottom:5px;
-}
-p{
-  color:#333;
-  margin:5px 0;
-}
-.btn{
-  color:white;
-  padding:12px 18px;
-  text-decoration:none;
-  border-radius:10px;
-  display:inline-block;
-  margin:8px 5px;
-  font-weight:bold;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik - The Pocket Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 30px;
+            border-radius: 25px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15);
+        }
+
+        /* प्रोफाइल फोटो का गोला */
+        .avatar-container {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 3px solid #ff7a00;
+            padding: 4px;
+            background: linear-gradient(45deg, #ff7a00, #e1306c);
+            box-shadow: 0 0 15px rgba(255, 122, 0, 0.4);
+            overflow: hidden;
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #1e293b;
+        }
+
+        h1 {
+            color: #ff7a00;
+            font-size: 2.3rem;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            color: #38bdf8;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .info-tag {
+            background: rgba(255, 255, 255, 0.08);
+            color: #cbd5e1;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .subtext {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .stats-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 14px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 4px solid #38bdf8;
+            font-size: 0.95rem;
+            color: #38bdf8;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-blog {
+            background: linear-gradient(45deg, #ff5722, #ff7a00);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+        }
+
+        .btn-blog:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 25px rgba(255, 87, 34, 0.6);
+        }
+
+        .btn-insta {
+            background: linear-gradient(45deg, #e1306c, #f77737);
+            color: white;
+            box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
+        }
+
+        .btn-insta:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 25px rgba(225, 48, 108, 0.6);
+        }
+    </style>
 </head>
 <body>
 
-<div class="card">
-<h1>Kartik</h1>
-<p>NTPC Unchahar | 16.8 Years Old</p>
-<p>IT Student - Firoz Gandhi Polytechnic</p>
-<p>2876 XP - Rank 2nd - silver League</p>
+    <div class="profile-card">
+        <!-- आपकी प्रोफाइल फोटो का गोला -->
+        <div class="avatar-container">
+            <!-- अपनी फोटो का लिंक src="" के अंदर डालें, अभी डिफ़ॉल्ट टेक आइकॉन दिखेगा -->
+            <img src="https://flaticon.com" alt="Kartik">
+        </div>
 
-<br>
-<a class="btn" style="background:#FF5722;" href="https://kartikitstudent.blogspot.com" target="_blank">📝 My Blog</a>
-<a class="btn" style="background:#E1306C;" href="https://instagram.com/kartikpal2223" target="_blank">📸 Instagram</a>
+        <h1>Kartik</h1>
+        <div class="tagline">The Pocket Developer</div>
+        
+        <div class="info-tag">📍 NTPC Unchahar | 🎂 16.8 Years Old</div>
+        
+        <p class="subtext">
+            💻 IT Student<br>
+            🏛️ <strong>Firoz Gandhi Polytechnic, Raebareli</strong>
+        </p>
 
-</div>
+        <div class="stats-box">
+            ⚡ 2876 XP — Rank 2nd (Silver League)
+        </div>
+
+        <div class="links-container">
+            <a href="https://blogspot.com" target="_blank" class="btn btn-blog">
+                📝 Visit My Blog
+            </a>
+            
+            <a href="https://instagram.com" target="_blank" class="btn btn-insta">
+                📸 Instagram Profile
+            </a>
+        </div>
+    </div>
 
 </body>
 </html>
+>
